@@ -1,0 +1,20 @@
+$>cat index.html
+<html>
+    <div id="my_box" style= "background-color: red; position: absolute; right: 70; bottom: 70; min-width: 100px; min-height: 100px"></div>
+    <script type="text/javascript">
+
+    function moveBox(x,y) {
+
+        var box = document.getElementById("my_box");
+        box.style.position = "absolute";
+        box.style.right = -x+'px';
+        box.style.bottom = -y+'px';
+
+    }
+
+    moveBox(0,0);
+
+
+    </script>
+</html>
+$>
