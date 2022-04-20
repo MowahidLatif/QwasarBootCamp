@@ -1,0 +1,15 @@
+<html>
+    <div id="my_box_realtime" style= "background-color: red; position: absolute; right: 70; bottom: 70; min-width: 100px; min-height: 100px"></div>
+    <script type="text/javascript">
+    var div = document.getElementById("my_box_realtime");
+    var timeout = 35;
+    var x = 70;
+    
+    setInterval(function(){ 
+        x--;
+        div.style.right = x+'px';
+        div.style.bottom = x+'px';
+        
+    }, 1000);
+    </script>
+</html>
