@@ -1,0 +1,18 @@
+<html>
+    <div id="my_box_realtime" style= "background-color: red; position: absolute; right: 70; bottom: 70; min-width: 100px; min-height: 100px"></div>
+    <script type="text/javascript">
+      function ContentDown(d)//this is for group project "My Moving Box Realtime"
+		{
+            var obj = document.getElementById(d);
+            var currentPositionB = parseInt(obj.style.bottom)
+            var currentPositionR = parseInt(obj.style.right)
+            var amountToMove = 1
+
+            obj.style.bottom = currentPositionB-amountToMove+"pt";
+            obj.style.right = currentPositionR-amountToMove+"pt";
+        }
+        
+        //ContentDown("my_box_realtime");
+        setInterval(function(){ ContentDown("my_box_realtime"); }, 500);
+    </script>
+</html>
